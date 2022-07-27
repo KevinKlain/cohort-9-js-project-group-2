@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anton&family=Cinzel&family=Merriweather+Sans:wght@300&family=Mochiy+Pop+One&family=Pacifico&family=Square+Peg&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>QuoteGenerator</title>
+</head>
+<body>
+
+    <nav class="nav">
+
+        <h1 class="nav-title">
+            QuoteGenerator
+        </h1>
+
+        <ul class="nav-links-container">
+            <a class="nav-links" href="">About</a>
+            <a class="nav-links" href="">All Quotes</a>
+            <a class="nav-links" href="">Add Quote</a>
+        </ul>
+
+    </nav>
+
+    <main class="main">
+        <div class="main-container">
+            <p class="main-text">One thing I know, that I know nothing. This is the source of my wisdom.
+            </p>
+
+            <p class="main-text-author">
+                - Socratis
+            </p>
+
+        </div>
+        
+    
+    
+    <footer class="footer">
+
+        <button onclick="changeQuote()" class="main-button">
+            New Quote
+        </button>
+        <div>
+            <a class="footer-link" href="https://www.instagram.com/klain_k_/"><i class="fa fa-brands fa-instagram"></a></i>
+            <a class="footer-link" href="https://www.facebook.com/kevin.klein.5494360/"> <i class="fa fa-brands fa-facebook"></i></a>
+            <a class="footer-link" href="https://github.com/KevinKlain"> <i class="fa fa-brands fa-github"></i></a>
+        </div>
+        <button onclick="styleAppear()" class="main-button">
+            Change Style
+        </button>
+    </footer>
+
+    <div class="styles">
+
+        <div class="colorButtons-container">
+            <div>
+                <p>Font-Color</p>
+                <button onclick="changeFontColor(event.target.value)" class="colorButtons green" value="green"></button>
+                <button onclick="changeFontColor(event.target.value)" class="colorButtons red" value="red"></button>
+                <button onclick="changeFontColor(event.target.value)" class="colorButtons blue" value="blue"></button>
+                <button onclick="changeFontColor(event.target.value)" class="colorButtons yellow" value="yellow"></button>
+                <button onclick="randomFontColor()" class="colorButtons random" value="green"></button>
+            </div>
+            <hr>
+            <div>
+                <p>Background-Color</p>
+                <button onclick="changeBackgroundColor(event.target.value)" class="colorButtons orange" value="orange"></button>
+                <button onclick="changeBackgroundColor(event.target.value)" class="colorButtons gray" value="gray"></button>
+                <button onclick="changeBackgroundColor(event.target.value)" class="colorButtons black" value="black"></button>
+                <button onclick="changeBackgroundColor(event.target.value)" class="colorButtons violet" value="violet"></button>
+                <button onclick="randomBackgroundColor()" class="colorButtons random" value="green"></button>
+            </div>
+        </div>
+
+        <div>
+            <button onclick="removeStyle()" class="removeButton"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+            <button onclick="hideStyle()" class="closeButton"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div>
+            <select onclick="changeFontFamily(event.target.value)">
+                <option value="Mochiy Pop One">Mochiy Pop One</option>
+                <option value="Square Peg">Square Peg</option>
+                <option value="Anton">Anton</option>
+                <option value="Pacifico">Pacifico</option>
+                <option value="Cinzel">Cinzel</option>
+                <option value="Amatic SC">Amatic SC</option>
+            </select>
+        </div>
+
+    </div>
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
